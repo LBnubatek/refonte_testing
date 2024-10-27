@@ -17,6 +17,11 @@ url = "/elements"
 weight = 3
 
 [[main]]
+name = "Nous contacter"
+url = "/contact"
+weight = 3
+
+[[main]]
 weight = 4
 name = "Pages"
 
@@ -24,11 +29,6 @@ name = "Pages"
 parent = "Pages"
 name = "Blog"
 url = "/blog"
-
-[[main]]
-parent = "Pages"
-name = "Contact"
-url = "/contact"
 
 [[main]]
 parent = "Pages"
