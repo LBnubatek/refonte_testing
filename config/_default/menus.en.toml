@@ -50,6 +50,24 @@ weight = 3
 #name = "404 Page"
 #url = "/404"
 
+###
+[[main]]
+parent = "Postulez"
+name = "Front-End"
+url = "/front-end"
+
+[[main]]
+parent = "Postulez"
+name = "Back-End"
+url = "/back-end"
+
+[[main]]
+parent = "Postulez"
+name = "Data Analyst"
+url = "/data-scientist"
+
+###
+
 
 # footer menu
 [[footer]]

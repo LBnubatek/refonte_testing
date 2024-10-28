@@ -91,15 +91,18 @@
         <div class="flex flex-wrap justify-center mt-4">
           {{ range $i, $e:= .Params.home_page_services }}
           <div class="flex flex-wrap justify-center mr-10">
-            <div class="relative flex flex-col my-6 bg-white dark:bg-darkmode-theme-light shadow-sm border border-slate-200 rounded-lg w-96 dark:border-0 ">
+            <div class="pt-4 relative flex flex-col my-6 bg-white dark:bg-darkmode-theme-light shadow-sm border border-slate-200 rounded-lg w-96 dark:border-0 ">
+              <h5 class="mb-2 text-primary text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                {{.title | markdownify}}
+              </h5>
               <div class="relative h-42 m-2.5 overflow-hidden text-white rounded-md dark:border-gray-200">
                 {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
                 <!--<img src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="card-image" />-->
               </div>
               <div class="p-4 dark:bg-darkmode-theme-light">
-                <h5 class="mb-2 text-primary text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <!--<h5 class="mb-2 text-primary text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   {{.title | markdownify}}
-                </h5>
+                </h5>-->
                 <p>
                   {{.content | markdownify}}
                 </p>
