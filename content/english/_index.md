@@ -123,4 +123,7 @@ use_cases:
       enable: true
       label: "Voir les détails"
       link: "/estimation-des-biens-immobiliers/"
+
+#logos section
+logos_section_title: "Ils nout ont fait confiance"
 ---
