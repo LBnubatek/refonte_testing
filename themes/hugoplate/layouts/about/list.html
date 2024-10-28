@@ -76,17 +76,17 @@
       {{ range $i, $e:= .Params.fondateurs }}
       <div class="mb:md-0  md:col-5 mb-6">
         <figure class="max-w-screen-md">
-          <blockquote>
-              <p class="text-lg">{{ .content | markdownify }}</p>
-          </blockquote>
-          <figcaption class="flex items-center mt-6 space-x-3 rtl:space-x-reverse">
+          <div class="mb-4 flex items-center mt-6 space-x-3 rtl:space-x-reverse">
             {{ partial "image" (dict "Src" .profile_image "Size" "50x50" "Class" "rounded-full" "Alt" .name) }}
               <!--<img class="w-6 h-6 rounded-full" src="/refonte_siteweb/images/amar.png" alt="profile picture">-->
               <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700">
-                  <cite class="pe-3 font-medium text-gray-900 dark:text-white">{{ .name | markdownify }}</cite>
-                  <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">{{ .post | markdownify }}</cite>
+                  <h6 class="pe-3 text-gray-900 dark:text-white font-semibold">{{ .name | markdownify }}</h6>
+                  <h6 class="ps-3 text-gray-900 dark:text-gray-400 font-semibold">{{ .post | markdownify }}</h6>
               </div>
-          </figcaption>
+          </div>
+          <p class="text-lg">
+              {{ .content | markdownify }}
+          </p>
         </figure>
       </div>
       {{end}}
