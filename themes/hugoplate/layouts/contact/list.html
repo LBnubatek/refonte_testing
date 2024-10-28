@@ -9,7 +9,7 @@
             <div class="{{ with site.Params.contact_form }}{{ if .enable }} mb:md-0  md:col-5 mb-6 {{end}}{{end}}{{ with site.Params.contact_form }}{{ if not .enable }}flex items-center justify-center{{ end }}{{ end}}">
               <!--<h4 class="h4 mb-4">Nos bureaux</h4>-->
              <!-- Offices -->
-              <div class="">
+              <div>
                   {{ range $i, $e:= .Params.offices }}
                   <section class="section-m {{ with site.Params.contact_form }}{{ if not .enable }}ml-12{{ end }}{{ end}}">
                     <div class="container mb-11">
