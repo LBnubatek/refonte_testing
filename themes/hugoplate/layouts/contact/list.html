@@ -6,19 +6,21 @@
         <h3 class="h2 text-center mb-11">Envie de nous rencontrer ? D’échanger ? <p class="h4">Envoyez-nous un message</p> </h3>
         <div class="md:col-12 lg:col-12">
           <div class="row items-center justify-between">
-            <div class="mb:md-0  md:col-5 mb-6">
-              <h4 class="h4 mb-4">Nos  bureaux</h4>
+            <div class="{{ with site.Params.contact_form }}{{ if .enable }} mb:md-0  md:col-5 mb-6 {{end}}{{end}}{{ with site.Params.contact_form }}{{ if not .enable }}flex items-center justify-center{{ end }}{{ end}}">
+              <!--<h4 class="h4 mb-4">Nos bureaux</h4>-->
              <!-- Offices -->
-              <div>
+              <div class="">
                   {{ range $i, $e:= .Params.offices }}
-                  <section class="section-m">
+                  <section class="section-m {{ with site.Params.contact_form }}{{ if not .enable }}ml-12{{ end }}{{ end}}">
                     <div class="container mb-11">
                       <div class="row items-center justify-between">
-                        <div class="block max-w-sm p-6 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700 ">
+                        <div class="block max-w-sm p-6 rounded-lg bg-gray-50 dark:bg-darkmode-theme-light">
                           <h3 class="mb-4">
                             {{ .office | markdownify }}
                           </h3>
-                          <p class="font-semibold">{{ .country | markdownify  }}</p>
+                          <span class="font-semibold">Adress e-mail:</span><span> {{ .email_address | markdownify  }}</span>
+                          <span class="font-semibold">Adresse</span>
+                          <p>{{ .country | markdownify  }}</p>
                           <p class="italic">{{ .address | markdownify  }}</p>
                         </div>
                       </div>
@@ -28,44 +30,48 @@
               </div>
               <!-- /Offices -->
             </div>
-            <div class="md:col-7 lg:col-6">
-              <form action="{{ site.Params.contact_form_action }}" method="POST">
-              <div class="mb-6">
-                <label for="name" class="form-label">
-                  Votre nom <span class="text-red-500">*</span>
-                </label>
-                <input
-                  id="name"
-                  name="name"
-                  class="form-input"
-                  placeholder="Votre nom"
-                  type="text" />
+            {{ with site.Params.contact_form }}
+            {{ if .enable }}
+              <div class="md:col-7 lg:col-6">
+                <form action="{{ site.Params.contact_form_action }}" method="POST">
+                <div class="mb-6">
+                  <label for="name" class="form-label">
+                    Votre nom <span class="text-red-500">*</span>
+                  </label>
+                  <input
+                    id="name"
+                    name="name"
+                    class="form-input"
+                    placeholder="Votre nom"
+                    type="text" />
+                </div>
+                <div class="mb-6">
+                  <label for="email" class="form-label">
+                    Votre adresse e-mail <span class="text-red-500">*</span>
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="Votre adresse e-mail"
+                    type="email" />
+                </div>
+                <div class="mb-6">
+                  <label for="message" class="form-label">
+                    Votre message <span class="text-red-500">*</span>
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-input"
+                    placeholder="Votre message..."
+                    rows="8"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+              </form>
               </div>
-              <div class="mb-6">
-                <label for="email" class="form-label">
-                  Votre adresse e-mail <span class="text-red-500">*</span>
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  class="form-input"
-                  placeholder="Votre adresse e-mail"
-                  type="email" />
-              </div>
-              <div class="mb-6">
-                <label for="message" class="form-label">
-                  Votre message <span class="text-red-500">*</span>
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  class="form-input"
-                  placeholder="Votre message..."
-                  rows="8"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Envoyer</button>
-            </form>
-            </div>
+            {{ end }}
+            {{ end }}
           </div>
         </div>
       </div>
