@@ -1,4 +1,4 @@
-############# French navigation ##############
+############# English navigation ##############
 
 # main menu
 [[main]]
@@ -20,11 +20,6 @@ weight = 3
 #name = "Elements"
 #url = "/elements"
 #weight = 3
-
-[[main]]
-name = "Nous contacter"
-url = "/contact"
-weight = 3
 
 #[[main]]
 #weight = 4
@@ -52,6 +47,11 @@ weight = 3
 
 ###
 [[main]]
+name = "Postulez"
+url = "/#"
+weight = 5
+
+[[main]]
 parent = "Postulez"
 name = "Front-End"
 url = "/front-end"
@@ -67,9 +67,15 @@ name = "Data Analyst"
 url = "/data-scientist"
 
 [[main]]
+name = "Nos réalisations"
+url = "/#"
+weight = 4
+
+[[main]]
 parent = "Nos réalisations"
 name = "Télémédecine"
 url = "/telemedecine"
+weight = 2
 
 [[main]]
 parent = "Nos réalisations"
@@ -80,10 +86,12 @@ url = "/assurance-en-ligne"
 parent = "Nos réalisations"
 name = "Estimation des biens immobiliers"
 url = "/estimation-des-biens-immobiliers"
-
-
 ###
 
+[[main]]
+name = "Nous contacter"
+url = "/contact"
+weight = 6
 
 # footer menu
 [[footer]]
