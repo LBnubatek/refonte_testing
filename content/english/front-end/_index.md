@@ -27,4 +27,5 @@ Affecté au sein d’une équipe, le développeur Front-end Java est en charge d
 - Maîtrise du français.
 - Anglais technique.
 
+#### Nous contacter
 Pour candidater sur ce poste, veuillez nous transmettre votre CV accompagné d’une lettre de motivation à l’adresse recrutement@nuba-tek.com en précisant l’intitulé du poste.

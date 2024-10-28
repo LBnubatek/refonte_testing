@@ -6,7 +6,7 @@ banner:
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Découvrez not services"
+    label: "Découvrez nos services"
     link: "/#our-services-section"
 
 # Features

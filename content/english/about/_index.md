@@ -2,7 +2,7 @@
 # About page sections
 about_page_sections:
   - title: "Qui sommes-nous ?"
-    image: "/images/about_image.png"
+    image: "/images/about_image.svg"
     content: "Présente sur deux continents, Nuba Tek est une société de conseil et de développement informatique. Nous développons une expertise de pointe autour de la data, dans les domaines du digital, de la data science et de l’intelligence artificielle, tout en s’appropriant cet outil devenu indispensable de nos jours qui est le cloud.
 Autour du cœur de métier qu’est l’ingénierie IT, Nuba Tek propose une palette de services étendue, qui lui permet de prendre en charge un projet dans sa globalité : consulting en amont et en accompagnement des projets, développement agile, formation, support et maintien en conditions opérationnelles."
     button:
