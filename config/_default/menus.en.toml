@@ -66,6 +66,22 @@ parent = "Postulez"
 name = "Data Analyst"
 url = "/data-scientist"
 
+[[main]]
+parent = "Nos réalisations"
+name = "Télémédecine"
+url = "/telemedecine"
+
+[[main]]
+parent = "Nos réalisations"
+name = "Assurance en ligne"
+url = "/assurance-en-ligne"
+
+[[main]]
+parent = "Nos réalisations"
+name = "Estimation des biens immobiliers"
+url = "/estimation-des-biens-immobiliers"
+
+
 ###
 
 
