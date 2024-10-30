@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
-baseURL = "/"
+baseURL = "https://lbnubatek.github.io/refonte_testing/"
 # Title of your website (required).
 title = "Nuba Tek"
 # Your theme name
