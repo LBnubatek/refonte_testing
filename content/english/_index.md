@@ -126,4 +126,11 @@ use_cases:
 
 #logos section
 logos_section_title: "Ils nout ont fait confiance"
+logo_images:
+      - "images/logos/logo_3.svg"
+      - "images/logos/logo_1.svg"
+      - "images/logos/logo_4.svg"
+      - "images/logos/logo_5.svg"
+      - "images/logos/logo_6.svg"
 ---
+
