@@ -2,17 +2,17 @@
 
 # main menu
 [[main]]
-name = "Home"
+name = "Accueil"
 url = "/"
 weight = 1
 
 [[main]]
-name = "About"
+name = "À propos"
 url = "/about"
 weight = 2
 
 [[main]]
-name = "Our services"
+name = "Nos services"
 url = "/#our-services-section"
 weight = 3
 
@@ -47,65 +47,65 @@ weight = 3
 
 ###
 [[main]]
-name = "Recruitment"
+name = "Postulez"
 url = "/#"
 weight = 5
 
 [[main]]
-parent = "Recruitment"
+parent = "Postulez"
 name = "Front-End"
 url = "/front-end"
 
 [[main]]
-parent = "Recruitment"
+parent = "Postulez"
 name = "Back-End"
 url = "/back-end"
 
 [[main]]
-parent = "Recruitment"
+parent = "Postulez"
 name = "Data Analyst"
 url = "/data-scientist"
 
 [[main]]
-name = "Showcases"
+name = "Nos réalisations"
 url = "/#"
 weight = 4
 
 [[main]]
-parent = "Showcases"
+parent = "Nos réalisations"
 name = "Télémédecine"
 url = "/telemedecine"
 weight = 2
 
 [[main]]
-parent = "Showcases"
+parent = "Nos réalisations"
 name = "Assurance en ligne"
 url = "/assurance-en-ligne"
 
 [[main]]
-parent = "Showcases"
+parent = "Nos réalisations"
 name = "Estimation des biens immobiliers"
 url = "/estimation-des-biens-immobiliers"
 ###
 
 [[main]]
-name = "Contact"
+name = "Nous contacter"
 url = "/contact"
 weight = 6
 
 # footer menu
 [[footer]]
-name = "About"
+name = "À propos"
 url = "/about"
 weight = 1
 
 [[footer]]
-name = "Contact"
+name = "Nous contacter"
 url = "/contact"
 weight = 3
 
 
 [[footer]]
-name = "Legal Notices"
+name = "Mentions légales"
 url = "/mentions-legales"
 weight = 3
