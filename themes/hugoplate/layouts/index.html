@@ -144,6 +144,9 @@
       </div>
     </div>
   </section>-->
+  <div>
+    
+  </div>
   <section class="section">
     <div>
       <div>
@@ -156,27 +159,34 @@
           <div class="container">
             <div class="flex overflow-hidden space-x-16 group dark:bg-darkmode-primary"> 
               <div class="flex space-x-16 animate-loop-scroll group-hover:paused dark:bg-darkmode-primary">
-                <!--{{ range $i, $e:= .Params.logo_images }}-->
-                      <!--{{ . | markdownify }}-->
-                        <!--{{ partial "image" (dict "Src" . "Alt" "logo image" "Class" "max-w-none") }}-->
+                {{ range $i, $e:= .Params.logo_images }}
+                  {{ $image := resources.Get . }}
+                  <img src="{{ $image.RelPermalink }}" class="max-w-none">
+                       <!--{{ partial "image" (dict "Src" . "Alt" "logo image" "Class" "max-w-none") }}-->
                       <!--<image src={{.}} alt="logo image" class="max-w-none">-->
-                <!--{{ end }}-->
-                <img loading="lazy" src="images/logo_3.svg" class="max-w-none" alt="Image 1" />
+                {{ end }}
+                <!--<img loading="lazy" src="images/logo_3.svg" class="max-w-none" alt="Image 1" />
                 <img loading="lazy" src="images/logo_1.svg" class="max-w-none" alt="Image 2" />
                 <img loading="lazy" src="images/logo_4.svg" class="max-w-none" alt="Image 3" />
                 <img loading="lazy" src="images/logo_5.svg" class="max-w-none" alt="Image 4" />
-                <img loading="lazy" src="images/logo_6.svg" class="max-w-none" alt="Image 5" />
+                <img loading="lazy" src="images/logo_6.svg" class="max-w-none" alt="Image 5" />-->
               </div>
               <div class="flex space-x-16 animate-loop-scroll group-hover:paused dark:bg-darkmode-primary" aria-hidden="true">
-                <!--{{ range $i, $e:= .Params.logo_images }}
-                  {{ partial "image" (dict "Src" . "Alt" "logo image" "Class" "max-w-none") }}-->
+                <!--{{ range $i, $e:= .Params.logo_images }}-->
+                  <!--{{ partial "image" (dict "Src" . "Alt" "logo image" "Class" "max-w-none") }}-->
                  <!-- <image src={{.}} alt="logo image" class="max-w-none">-->
                 <!--{{ end }}-->
-              <img loading="lazy" src="images/logo_3.svg" class="max-w-none" alt="Image 1" />
+                {{ range $i, $e:= .Params.logo_images }}
+                  {{ $image := resources.Get . }}
+                  <img src="{{ $image.RelPermalink }}" class="max-w-none">
+                       <!--{{ partial "image" (dict "Src" . "Alt" "logo image" "Class" "max-w-none") }}-->
+                      <!--<image src={{.}} alt="logo image" class="max-w-none">-->
+                {{ end }}
+              <!--<img loading="lazy" src="images/logo_3.svg" class="max-w-none" alt="Image 1" />
                 <img loading="lazy" src="images/logo_1.svg" class="max-w-none" alt="Image 2" />
                 <img loading="lazy" src="images/logo_4.svg" class="max-w-none" alt="Image 3" />
                 <img loading="lazy" src="images/logo_5.svg" class="max-w-none" alt="Image 4" />
-                <img loading="lazy" src="images/logo_6.svg" class="max-w-none" alt="Image 5" />
+                <img loading="lazy" src="images/logo_6.svg" class="max-w-none" alt="Image 5" />-->
               </div>
             </div>
           </div>
